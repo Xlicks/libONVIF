@@ -2,7 +2,7 @@
 A C++11-based (and above) library for developing ONVIF protocol
 # Introduction
 This is my first open-source project. I don't know how the final result will be, so let's give it a try and work hard  
-Prepare the protocols to be supported: 
+Prepare the protocols to be supported:   
 ONVIF 分析：http://www.onvif.org/ver20/analytics/wsdl  
 ONVIF 设备：http://www.onvif.org/ver10/device/wsdl  
 ONVIF 显示：http://www.onvif.org/ver10/display/wsdl  

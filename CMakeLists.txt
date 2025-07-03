@@ -1,1 +1,8 @@
-
+CMAKE_MINIMUM_REQUIRED(VERSION 3.12)
+PROJECT(libONVIF)
+SET(CMAKE_CXX_STANDARD 17)
+SET(CMAKE_CXX_FLAGS_DEBUG "-ggdb3 -Wall -ggdb -O0")
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+include(FindOpenSSLCommon)
+add_subdirectory(gsoap)
+add_subdirectory(src)

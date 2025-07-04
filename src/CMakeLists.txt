@@ -15,6 +15,7 @@ set(INC global.h
         response.h
         soap_auth_handler.h
         soap_context.h
+        topics.h
 )
 
 set(SRC onvif_analytics_client.cpp
@@ -30,7 +31,9 @@ set(SRC onvif_analytics_client.cpp
         onvif_recording_client.cpp
         onvif_replay_client.cpp
         soap_auth_handler.cpp
-        soap_context.cpp)
+        soap_context.cpp
+        topics.cpp
+)
 
 if(HAS_OPENSSL)
     add_definitions(-DWITH_OPENSSL)

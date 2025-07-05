@@ -16,7 +16,7 @@ struct OnvifEventClientImplementation
           event_proxy(event_client_ptr->GetContext()->Acquire())
     {
         soap_set_namespaces(event_proxy.soap, SoapContext::GetDefaultNamespaces());
-        ec_ptr->GetContext()->Release();
+        event_client_ptr->GetContext()->Release();
     }
     ~OnvifEventClientImplementation() = default;
     OnvifEventClient* event_client_ptr;
